@@ -1,0 +1,10 @@
+{
+  "name": "my-goat-game",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node test/sim.test.mjs && node test/promises.test.mjs",
+    "shot": "node scripts/shot.mjs"
+  }
+}

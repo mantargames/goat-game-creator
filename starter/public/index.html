@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hex Starter</title>
+<link rel="stylesheet" href="style.css">
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<canvas id="scene"></canvas>
+
+<div id="hud" hidden>
+  <div class="top">
+    <div class="panel res"><span class="ic gold"></span><b id="gold">0</b><span class="ic wood"></span><b id="wood">0</b></div>
+    <div class="panel phase" id="phase">Day 1</div>
+    <div class="panel income" id="income"></div>
+  </div>
+  <div class="bottom">
+    <div class="build" id="buildBar"></div>
+    <button class="go" id="nightBtn">Start night</button>
+  </div>
+  <div class="toast" id="toast"></div>
+</div>
+
+<div class="overlay" id="loading"><div class="card"><h1>Hex Starter</h1><p id="loadText">loading assets...</p></div></div>
+<div class="overlay" id="end" hidden><div class="card"><h1 id="endTitle">Victory</h1><p id="endText"></p><button class="go" id="restart">Play again</button></div></div>
+
+<!-- debug hooks write one line here. Read it with: chrome --headless --dump-dom URL | grep debuglog -->
+<pre id="debuglog" hidden></pre>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "goat-game-creator",
+  "description": "Goatstarter's game studio plugin for Claude Code: build browser 3D games from free CC0 asset packs.",
+  "owner": {
+    "name": "Goatstarter",
+    "url": "https://goatstarter.com"
+  },
+  "plugins": [
+    {
+      "name": "goat-game-creator",
+      "description": "Build browser 3D games from free asset packs with a verify-by-screenshot loop: /make-game (EN) and /oyun-yap (TR).",
+      "source": "./"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Hex Starter",
+  "port": 5151,
+  "assets": "./assets"
+}

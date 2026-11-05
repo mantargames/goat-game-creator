@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>goat explorer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<aside class="nav">
+  <a class="brand" href="#/">
+    <pre class="goat">(\_/)
+(o.o)</pre>
+    <span><b>goat explorer</b><small id="rootName">-</small></span>
+  </a>
+  <div class="search"><input id="search" type="search" placeholder="search every model..." autocomplete="off" spellcheck="false"><kbd>/</kbd></div>
+  <div class="filters">
+    <button class="flt" data-flt="t" title="rigged characters">characters</button>
+    <button class="flt" data-flt="a" title="animation files">animations</button>
+    <button class="flt" data-flt="v" title="models with colour variants">variants</button>
+  </div>
+  <div class="styles" id="styles"></div>
+  <nav class="tree" id="tree"></nav>
+  <footer><span id="stat">-</span><button id="rescan" class="link">rescan</button></footer>
+</aside>
+
+<main id="main"><div class="empty">indexing...</div></main>
+
+<div class="modal" id="modal" hidden>
+  <div class="backdrop" id="backdrop"></div>
+  <div class="panel">
+    <header>
+      <div><div class="crumb" id="mCrumb"></div><h2 id="mTitle"></h2></div>
+      <div class="actions"><button id="mPrev" title="previous (left arrow)">&larr;</button><button id="mNext" title="next (right arrow)">&rarr;</button><button id="mClose" title="close (esc)">&times;</button></div>
+    </header>
+    <div class="body">
+      <div class="stage"><canvas id="mCanvas"></canvas><div class="loading" id="mLoading">loading...</div><div class="variants" id="mVariants"></div></div>
+      <div class="info">
+        <dl id="mInfo"></dl>
+        <div class="notes" id="mNotes"></div>
+        <div class="tools">
+          <button id="mSpin" class="on">spin</button><button id="mWire">wireframe</button><button id="mGrid" class="on">grid</button>
+          <button id="mCopy" title="path relative to the asset folder">copy path</button>
+        </div>
+        <div class="clips" id="mClips"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+<script type="module" src="app.js"></script>
+</body>
+</html>

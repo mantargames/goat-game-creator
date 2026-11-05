@@ -1,0 +1,16 @@
+{
+  "name": "goat-game-creator",
+  "version": "0.1.0",
+  "description": "Turn Claude Code into a game studio: a Claude Code plugin + zero-dependency toolkit for polished browser 3D games from free CC0 asset packs. EN + TR.",
+  "bin": { "goat-game": "bin/goat-game.js" },
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "test": "node starter/test/sim.test.mjs && node starter/test/promises.test.mjs && node test/cli.test.mjs"
+  },
+  "files": ["bin", "explorer", "starter", "skills", ".claude-plugin", "README.md", "README.tr.md", "LICENSE"],
+  "keywords": ["claude", "claude-code", "plugin", "game", "threejs", "kaykit", "kenney", "quaternius", "gamedev"],
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/goatstarter/goat-game-creator" },
+  "author": "Goatstarter"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "goat-game-creator",
+  "version": "0.1.0",
+  "description": "Turn Claude Code into a game studio: polished browser 3D games from free CC0 asset packs (KayKit, Kenney, Quaternius), verified by playing and screenshotting. /make-game (EN) and /oyun-yap (TR).",
+  "author": { "name": "Goatstarter", "url": "https://goatstarter.com" },
+  "homepage": "https://github.com/goatstarter/goat-game-creator",
+  "license": "MIT",
+  "keywords": ["game", "gamedev", "threejs", "kaykit", "kenney", "quaternius", "3d"]
+}
